@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Marketplace</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav__wrapper">
+      <div class="logo-wrapper">
+        <img class="logo" src="../img/header/logo.svg" alt="logo">
+        <p class="logo-text">Car Marketplace</p>
+      </div>
+      <ul>
+        <li class="nav__button"><a href="../index.html">Каталог</a></li>
+        <li class="nav__button">
+          <a href="../pages/search.html">Пошук авто</a>
+        </li>
+        <li class="nav__button profile-menu">
+          <a href="#">
+            <img class="profile__logo" src="../img/header/profile.png" alt="profile">
+            Профіль</a>
+          <ul class="dropdown">
+            <li class="dropdown__item">
+              <a href="register.html">Реєстрація</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="#">Авторизація</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="login-page">
+    <h1>Авторизація</h1>
+
+    <form class="form" action="https://fom.in.ua/echo" method="post">
+      <div class="form__group">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Введіть email" required>
+      </div>
+
+      <div class="form__group">
+        <label for="password">Пароль:</label>
+        <input type="password" name="password" id="password" placeholder="Введіть пароль" required>
+      </div>
+      <div class="form__group remember">
+        <input type="checkbox" name="remember" id="remember">
+        <label for="remember">Запам'ятати пароль</label>
+      </div>
+
+      <button type="submit" class="form__submit">Увійти</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__line">
+      <p class="footer__item">
+        Bohdan Hulobov 7th home work - Hillel IT School
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
